@@ -583,7 +583,7 @@ body {
     width: 0px;
     background-color: #000000;
     color: #f7e184;
-    left: 100%;
+    left: 98%;
 }
 
 #service-item-1:checked ~ .services-control .services-control-label-1::after, 
