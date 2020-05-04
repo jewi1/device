@@ -15,9 +15,12 @@
             <nav class="main-navigation">
                 <ul class="user-navigation">
                     <li class="user-item user-item-form">
-                        <form action="https://echo.htmlacademy.ru" method="POST" class="user-form">
+                        <form action="https://echo.htmlacademy.ru" method="POST" class="user-form" id="search">
                             <input type="search" name="search" class="search-form" placeholder="Поиск по сайту">
                             <button type="submit" class="search-button">Найти</button>
+                            <label for="search" class="search-label">
+                                <span class="visually-hidden">Найти</span>
+                            </label>
                         </form>
                     </li>
                     <li class="user-item user-item-login">
@@ -32,12 +35,12 @@
                 </ul>
                 <ul class="site-navigation">
                     <li class="navigation-item navigation-item-catalog">
-                        <a href="#">Каталог товаров</a>
+                        <a href="catalog.html">Каталог товаров</a>
                         <div class="catalog-navigation-wrap">
                             <ul class="catalog-navigation">
                                 <li class="catalog-navigation-item">
                                     <a href="#">Виртуальная реальность</a>
-                                    <a href="#">Моноподы для селфи</a>
+                                    <a href="catalog.html">Моноподы для селфи</a>
                                     <a href="#">Экшн-камеры</a> 
                                 </li>
                                 <li class="catalog-navigation-item">
@@ -314,7 +317,9 @@
                         </a>
                     </li>
                 </ul>
-                <a href="#" class="footer-developer-link"></a>
+                <a href="#" class="footer-developer-link">
+                    <img src="img/logo-html.png" alt="HTML Academy">
+                </a>
             </div>
         </div>
     </footer>
