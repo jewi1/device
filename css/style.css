@@ -938,6 +938,10 @@ body {
     width: 260px;
 }
 
+.write-button {
+    width: 260px;
+}
+
 .main-footer {
     background-color: #464646;
 }
@@ -1611,4 +1615,165 @@ label[for="max-price"] {
 
 .catalog-body .footer-logout {
     margin-left: -40px;
+}
+
+.modal-write {
+    position: fixed;
+    background-color: #ffffff;
+    top: 50%;
+    margin-top: -328.5px;
+    z-index: 5;
+    left: 50%;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 90px;
+    padding-bottom: 90px;
+    margin-left: -480px;
+    box-shadow: 0px 0px 20px 3px black;
+}
+
+.modal-form {
+    display: flex;
+    flex-wrap: wrap;
+    width: 760px;
+    justify-content: space-between;
+    position: relative;
+}
+
+.form-name-wrap {
+    width: 360px;
+    margin-bottom: 30px;
+}
+
+.form-email-wrap {
+    width: 360px;
+    margin-bottom: 30px;
+}
+
+.modal-write label {
+    font-family: 'gilroy', sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 800;
+}
+
+.name-input {
+    background-color: #f2f2f2;
+    border: 2px solid #f2f2f2;
+    width: 100%;
+    box-sizing: border-box;
+    padding-left: 20px;
+    padding-top: 15px;
+    padding-bottom: 14px;
+}
+
+.email-input {
+    background-color: #f2f2f2;
+    border: 2px solid #f2f2f2;
+    width: 100%;
+    box-sizing: border-box;
+    padding-left: 20px;
+    padding-top: 15px;
+    padding-bottom: 14px;
+}
+
+.form-mail-wrap {
+    width: 760px;
+    margin-bottom: 40px;
+}
+
+.mail-input {
+    background-color: #f2f2f2;
+    border: 2px solid #f2f2f2;
+    width: 100%;
+    box-sizing: border-box;
+    padding-left: 20px;
+    padding-top: 15px;
+    padding-bottom: 14px;
+}
+
+.button-submit {
+    width: 200px;
+}
+
+.button-close {
+    position: absolute;
+    border: none;
+    width: 55px;
+    height: 55px;
+    background-color: #f7e296;
+    border-radius: 50%;
+    right: -60px;
+    top: -50px;
+    cursor: pointer;
+}
+
+.button-close::before,
+.button-close::after {
+    content: "";
+    position: absolute;
+    width: 30px;
+    left: 50%;
+    margin-left: -15px;
+    top: 50%;
+    margin-top: -2px;
+    height: 4px;
+    background-color: #ffffff;
+}
+
+.button-close::before {
+    transform: rotate(45deg);
+}
+
+.button-close::after {
+    transform: rotate(-45deg);
+}
+
+.modal-show {
+    display: flex;
+    animation-name: bounce;
+    animation-duration: 0.6s;
+}
+
+@keyframes bounce {
+    0% {transform: translateY(-2000px);}
+    80% {transform: translateY(10px);}
+    90% {transform: translateY(-10px);}
+    100% {transform: translateY(0px);}
+}
+
+@keyframes shake {
+    0%, 100% {transform: translateX(0px);}
+    20%, 40%, 60%, 80% {transform: translateX(10px);}
+    10%, 30%, 50%, 70%, 90% {transform: translateX(-10px);}
+}
+
+.modal-error {
+    animation-name: shake;
+    animation-duration: 0.6s;
+}
+
+.modal-map {
+    display: none;
+    position: fixed;
+    left: 50%;
+    margin-left: -480px;
+    top: 50%;
+    margin-top: -280px;
+    z-index: 5;
+}
+
+.modal-map .button-close {
+    top: 45px;
+    right: 10px;
+}
+
+.modal-map-show {
+    display: block;
+    animation-name: bounce;
+    animation-duration: 0.6s;
 }

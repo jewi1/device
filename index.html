@@ -258,8 +258,8 @@
                 <section class="contact">
                     <h2 class="contact-title">Контакты</h2>
                     <p class="contact-text">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-                    <img src="img/map.jpg" class="map-contact" alt="Карта" width="560" height="222">
-                    <a href="#" class="button about-button">Напишите нам</a>
+                    <a href="map.html" class="map-link"><img src="img/map.jpg" class="map-contact" alt="Карта" width="560" height="222"></a>
+                    <a href="modal.html" class="button write-button">Напишите нам</a>
                 </section>
             </div>
         </div>
@@ -323,5 +323,33 @@
             </div>
         </div>
     </footer>
+    <section class="modal modal-write">
+        <h2 class="visually-hidden">Напишите нам</h2>
+        <form action="https://echo.htmlacademy.ru" method="POST" class="modal-form">
+            <div class="form-name-wrap">
+                <label for="name-id">Ваше имя:</label>
+                <input type="text" name="name" placeholder="Имя Фамилия" id="name-id" class="name-input">
+            </div>
+            <div class="form-email-wrap">
+                <label for="email-id">Ваш e-mail:</label>
+                <input type="email" name="email" placeholder="email@example.com" id="email-id" class="email-input">
+            </div>
+            <div class="form-mail-wrap">
+                <label for="mail-id">Текст письма:</label>
+                <textarea name="mail" id="mail-id" cols="30" rows="10" class="mail-input" placeholder="В свободной форме"></textarea>
+            </div>
+            <button type="submit" class="button button-submit">Отправить</button>
+            <button class="button-close" type="button">
+                <span class="visually-hidden">Закрыть</span>
+            </button>
+        </form>
+    </section>
+    <section class="modal modal-map">
+        <h2 class="visually-hidden">Ка добраться до нас</h2>
+        <div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/213/moscow/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Москва</a><a href="https://yandex.ru/maps/213/moscow/house/ulitsa_stroiteley_15/Z04YcwVpT0ADQFtvfXp5d3VrZA==/?ll=37.529655%2C55.686980&source=wizgeo&utm_medium=mapframe&utm_source=maps&z=17.09" style="color:#eee;font-size:12px;position:absolute;top:14px;">Улица Строителей, 15 — Яндекс.Карты</a><iframe src="https://yandex.ru/map-widget/v1/-/C8ERuLZs" width="960" height="560" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
+        <button type="button" class="button-close"></button>
+    </section>
+    <script src="js/modal-write.js"></script>
+    <script src="js/modal-map.js"></script>
 </body>
 </html>
